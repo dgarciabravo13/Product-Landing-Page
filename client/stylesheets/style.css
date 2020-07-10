@@ -277,3 +277,48 @@ nav > ul {
     margin-bottom: 10px;
   }
 }
+
+footer {
+  margin-top: 30px;
+  background-color: #fffff2;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > ul > li > a {
+  color: #126648;
+  text-decoration: none;
+}
+
+footer > span, p {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #126648;
+}
+
+footer > p {
+    animation-duration: 10s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
