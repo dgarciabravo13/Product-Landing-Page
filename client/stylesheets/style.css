@@ -210,5 +210,70 @@ nav > ul {
 #how-it-works > iframe {
   max-width: 560px;
   width: 100%;
-  border-radius:5px;
+  border-radius: 5px;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 33%;
+  margin: 10px;
+  border: 1px solid #126648;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: rgba(232, 160, 45, 1);
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: rgba(232, 160, 45, 1);
+  font-weight: 400;
+  border-radius: 50em;
+}
+
+.product > button:hover {
+  background-color: #126648;
+  transition: background-color, 1s;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
 }
