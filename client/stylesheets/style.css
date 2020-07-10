@@ -177,6 +177,8 @@ nav > ul {
   margin-top: 30px;
 }
 
+
+
 #features .desc {
   display: flex;
   flex-direction: column;
@@ -184,6 +186,11 @@ nav > ul {
   height: 125px;
   width: 80vw;
   padding: 5px;
+}
+
+#features .desc > p {
+  display: flex;
+  justify-content: flex-start;
 }
 
 @media (max-width: 550px) {
